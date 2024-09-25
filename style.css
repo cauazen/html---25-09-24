@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fundo claro */
+    color: #333; /* Texto escuro */
+}
+
+.menu {
+    background-color: #333; /* Fundo escuro do menu */
+    padding: 10px;
+}
+
+.menu_list {
+    list-style: none; /* Remove as bolinhas */
+    padding: 0;
+    display: flex; /* Usar flexbox para o menu */
+    justify-content: center; /* Centraliza os itens */
+    flex-wrap: wrap; /* Permite que itens quebrem para a próxima linha */
+}
+
+.menu_item {
+    margin: 0 15px; /* Margem entre os itens do menu */
+}
+
+.menu_link {
+    color: white; /* Texto em branco */
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.menu_link:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+h1 {
+    text-align: center; /* Centraliza o título */
+    margin: 20px 0; /* Margem acima e abaixo do título */
+}
+
+img {
+    max-width: 100%; /* A imagem não excederá a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+p {
+    text-align: center; /* Centraliza o texto do parágrafo */
+    margin: 20px; /* Margem em torno do parágrafo */
+    padding: 10px; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+a {
+    color: #007BFF; /* Cor do link */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Media Queries para dispositivos menores */
+@media (max-width: 600px) {
+    .menu {
+        text-align: center; /* Centraliza o menu no contêiner */
+    }
+
+    .menu_list {
+        flex-direction: column; /* Muda para coluna em telas pequenas */
+        align-items: center; /* Alinha os itens ao centro */
+    }
+
+    .menu_item {
+        margin: 5px 0; /* Margem reduzida para itens em coluna */
+    }
+}
